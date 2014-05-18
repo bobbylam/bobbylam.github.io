@@ -625,8 +625,6 @@ video.fillWidth {
     /*width: 100%;*/
 }
 
-/*STARTED FROM THE BOTTOM NOW WE HERE. If you started from the top like a normal person, that's okay too :)*/
-
 .carousel,
 .item,
 .active {
@@ -665,3 +663,5 @@ video.fillWidth {
     background-position: center;
     background-size: cover;
 }
+
+/*STARTED FROM THE BOTTOM NOW WE HERE. If you started from the top like a normal person, that's okay too :)*/
