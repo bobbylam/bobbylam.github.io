@@ -220,7 +220,7 @@ a:focus {
 }
 
 .quote-text{
-    font-size:60px;
+    font-size:40px;
     font-family: "13r", "127", "Helvetica Neue",Montserrat,Helvetica,Arial,sans-serif;
     color: #212121;
     letter-spacing: -1px;
@@ -642,19 +642,23 @@ video.fillWidth {
 }
 
 @media(max-width:767px) {
+    .carousel-indicators {
+        width: 80%;
+        margin-left: -40%;
+    }
     .carousel-indicators li{
         border: 1px solid #212121;
         border-color: #212121;
         color:#212121;
-        width:20px;
-        height:20px;
-        margin:2px;
+        width:10px;
+        height:10px;
+        margin:4px;
     }  
     .carousel-indicators .active{
         background-color:#212121;
-        width:20px;
-        height:20px;
-        margin:2px;
+        width:10px;
+        height:10px;
+        margin:4px;
     }
 }
 
