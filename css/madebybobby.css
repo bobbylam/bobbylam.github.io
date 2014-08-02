@@ -186,6 +186,7 @@ a:focus {
     letter-spacing: 1px;
     font-weight: 100;
     font-family: "3l","1614l","Helvetica Neue",Montserrat,Helvetica,Arial,sans-serif;
+    margin: 0 0 75px;
 }
 
 .dark{
@@ -289,7 +290,7 @@ a:focus{
 }
 
 .fa-angle-down {
-    font-size: 40px;
+    font-size: 36px;
 }
 
 .btn-circle {
@@ -297,11 +298,12 @@ a:focus{
     height: 50px;
     margin-top: 15px;
     /*border: 2px solid #fff;*/
-    opacity: 0.5;
+    opacity: 0.3;
+    background-color: #212121;
     border-radius: 25px;
     font-size: 20px;
     color: #fff;
-    background: 0 0;
+    /*background: 0 0;*/
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -311,7 +313,9 @@ a:focus{
 .btn-circle:focus {
     outline: 0;
     color: #fff;
-    background: rgba(255,255,255,.1);
+    /*background: rgba(255,255,255,.1);*/
+    background: rgb(255,238,0);
+    opacity: 0.8;
 }
 
 .banner-social-buttons .btn-circle{
@@ -431,6 +435,18 @@ a:focus{
     padding: 200px 0;
     color:#212121;
     background: url(../img/project3.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.project4 {
+    width: 100%;
+    padding: 200px 0;
+    color:#212121;
+    background: url(../img/project4.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
