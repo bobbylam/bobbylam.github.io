@@ -315,7 +315,7 @@ a:focus{
     color: #fff;
     /*background: rgba(255,255,255,.1);*/
     background: rgb(255,238,0);
-    opacity: 0.8;
+    /*opacity: 0.8;*/
 }
 
 .banner-social-buttons .btn-circle{
