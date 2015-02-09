@@ -38,11 +38,18 @@ p {
     line-height: 1.5;
 }
 
+.meimage {
+        width: 50%;
+}
+
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
         font-size: 14px;
         line-height: 1.6;
+    }
+    .meimage {
+        width: 25%;
     }
 }
 
