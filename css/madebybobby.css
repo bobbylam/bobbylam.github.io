@@ -626,6 +626,10 @@ body {
 }
 
 /*VIDEO STUFF*/
+video {
+    z-index:0;
+}
+
 .header-unit {
   height: 150px;
   border: 2px solid #000;
@@ -661,15 +665,6 @@ body {
     }
 }
 
-video {
-    /*position:absolute;*/
-    z-index:0;
-    /*opacity: 0.7;*/
-}
-video.fillWidth {
-    /*width: 100%;*/
-}
-
 .carousel,
 .item,
 .active {
@@ -690,28 +685,6 @@ video.fillWidth {
         visibility: hidden;
         text-shadow: none;
     }
-
-
-/*@media(max-width:767px) {
-    .carousel-indicators {
-        width: 80%;
-        margin-left: -40%;
-    }
-    .carousel-indicators li{
-        border: 1px solid #212121;
-        border-color: #212121;
-        color:#212121;
-        width:13px;
-        height:13px;
-        margin:6px;
-    }  
-    .carousel-indicators .active{
-        background-color:#212121;
-        width:13px;
-        height:13px;
-        margin:6px;
-    }
-}*/
 
 .carousel-control.right {
     background: none;
@@ -773,7 +746,8 @@ video.fillWidth {
     padding: 7px 0;
     height: auto;
     color: #212121;
-    font-size: 10px;
+    font-size: 8px;
+    letter-spacing: 4px;
 }
 
 /*STARTED FROM THE BOTTOM NOW WE HERE. If you started from the top like a normal person, that's okay too :)*/
