@@ -3,7 +3,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "1614l","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "3l","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
     color: #fff;
     background-color: #212121;
@@ -25,6 +25,10 @@ h6 {
     font-family: "3m","Helvetica Neue",Helvetica,Roboto Condensed,Arial,sans-serif;
     font-weight: 0;
     letter-spacing: 7px;
+}
+
+h4 {
+  font-size: 22px;
 }
 
 h5 {
@@ -160,8 +164,8 @@ a:focus {
     }
 }
 
-#wrap { 
-    position: relative;  
+#wrap {
+    position: relative;
 }
 
 .intro {
@@ -347,7 +351,7 @@ a:focus{
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -364,7 +368,7 @@ a:focus{
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -398,6 +402,11 @@ a:focus{
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+span.introlink {
+    background-color: rgb(255,238,0);
+    color: #212121;
 }
 
 .project-section {
@@ -525,7 +534,7 @@ a:focus{
     font-size: 11px;
     /*color: rgb(255,238,0);*/
     color: #212121;
-    background-color: rgb(255,238,0); 
+    background-color: rgb(255,238,0);
     opacity: 0.7;
     letter-spacing: 4px;
 }
@@ -554,49 +563,49 @@ a:focus{
 
 @font-face{
     font-family:'13r';
-    src:url('../fonts/13r.ttf') format("truetype"); 
+    src:url('../fonts/13r.ttf') format("truetype");
     font-weight:normal;
     font-style:normal
     }
 
 @font-face{
     font-family:'3m';
-    src:url('../fonts/3m.otf') format("opentype"); 
+    src:url('../fonts/3m.otf') format("opentype");
     font-weight:normal;
     font-style:normal
     }
 
 @font-face{
     font-family:'3l';
-    src:url('../fonts/3l.otf') format("opentype"); 
+    src:url('../fonts/3l.otf') format("opentype");
     font-weight:lighter;
     font-style:normal
     }
 
 @font-face{
     font-family:'7l';
-    src:url('../fonts/7l.ttf') format("truetype"); 
+    src:url('../fonts/7l.ttf') format("truetype");
     font-weight:normal;
     font-style:normal
     }
 
 @font-face{
     font-family:'1614l';
-    src:url('../fonts/1614l.ttf') format("truetype"); 
+    src:url('../fonts/1614l.ttf') format("truetype");
     font-weight:normal;
     font-style:normal
     }
 
 @font-face{
     font-family:'814';
-    src:url('../fonts/814.ttc') format("truetype"); 
+    src:url('../fonts/814.ttc') format("truetype");
     font-weight:normal;
     font-style:normal
     }
 
 @font-face{
     font-family:'127';
-    src:url('../fonts/127.otf') format("opentype"); 
+    src:url('../fonts/127.otf') format("opentype");
     font-weight:normal;
     font-style:normal
     }
@@ -639,20 +648,20 @@ video {
   padding: 0px;
 }
 
-#video-container{ 
-    position: fixed; 
-    bottom: 0px; 
-    right: 0px; 
-    min-width: 100%; 
-    min-height: 100%; 
-    width: auto; 
-    height: auto; 
-    z-index: -1; 
+#video-container{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
     overflow: hidden;
 }
 
 @media(max-width:767px) {
-    #video-container{ 
+    #video-container{
         background: #212121;
         position: fixed;
         top:0%;
