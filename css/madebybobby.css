@@ -697,13 +697,27 @@ video {
 }
 
 .carousel-indicators li{
-    border: 1px solid #212121;
-    border-color: #212121;
-    color:#212121;
+    /*border: 1px solid #212121;*/
+    /*border-color: #212121;*/
+    /*color:#212121;*/
+    background-color: rgba(200,200,200,0.5);
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+    border: none;
 }
 
 .carousel-indicators .active{
     background-color:#212121;
+    background-color: rgba(33,33,33,0.9);
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+    border: none;
+}
+
+.fa {
+    vertical-align: middle;
 }
 
 .carousel-control {
@@ -732,7 +746,7 @@ video {
         visibility: visible;
         top:auto;
         bottom: 3%;
-        font-size: 30px;
+        font-size: 20px;
         color: #212121;
         opacity: 1;
         background-color: #212121;
@@ -741,13 +755,13 @@ video {
     .carousel-control.left {
     background: none;
     background-color: #212121;
-    color: #ffeb03;
+    color: rgba(256,256,256,0.95);
     left: 36%;
     }
     .carousel-control.right {
     background: none;
     background-color: #212121;
-    color: #ffeb03;
+    color: rgba(256,256,256,0.95);
     right: 36%;
     }
 
@@ -755,7 +769,7 @@ video {
     .carousel-control:focus{
         background: none;
         background-color: #212121;
-        color: #ffeb03;
+        color: rgba(256,256,256,0.95);
         opacity: 1;
     }
 }
