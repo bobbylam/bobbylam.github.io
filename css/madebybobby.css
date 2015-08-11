@@ -3,7 +3,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "3l","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "3l",'Fira Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
     color: #fff;
     background-color: #212121;
@@ -22,9 +22,13 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "3m","Helvetica Neue",Helvetica,Roboto Condensed,Arial,sans-serif;
+    font-family: "3m","Helvetica Neue",Helvetica,'Fira Sans',Arial,sans-serif;
     font-weight: 0;
-    letter-spacing: 7px;
+    letter-spacing: 6px;
+}
+
+h1 {
+    font-size: 42px;
 }
 
 h4 {
@@ -95,7 +99,7 @@ a:focus {
     margin-bottom: 0;
     /*border-bottom: 1px solid rgba(255,255,255,.3);*/
     text-transform: uppercase;
-    font-family: "3l",Roboto Condensed,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "3l",'Fira Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #212121;
     letter-spacing: 5px;
 }
@@ -196,7 +200,7 @@ a:focus {
     font-size: 10px;
     letter-spacing: 1px;
     font-weight: 100;
-    font-family: "3l","1614l","Helvetica Neue",Roboto Condensed,Helvetica,Arial,sans-serif;
+    font-family: "3l","1614l","Helvetica Neue",'Fira Sans',Helvetica,Arial,sans-serif;
     margin: 0 0 75px;
 }
 
@@ -233,7 +237,7 @@ a:focus {
 
 .quote-text{
     font-size:40px;
-    font-family: "13r", "127", "Helvetica Neue",Roboto Condensed,Helvetica,Arial,sans-serif;
+    font-family: "13r", "127", "Helvetica Neue",'Fira Sans',Helvetica,Arial,sans-serif;
     color: #212121;
     letter-spacing: -1px;
     line-height: 80%;
@@ -521,7 +525,7 @@ span.introlink {
 
 .btn {
     text-transform: uppercase;
-    font-family: '1614l', Roboto Condensed,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: '1614l', 'Fira Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -546,7 +550,7 @@ span.introlink {
 .btn-rect {
     border: 2px solid rgb(255,238,0);
     border-radius: 2px;
-    font-family: "3m","Helvetica Neue",Helvetica,Roboto Condensed,Arial,sans-serif;
+    font-family: "3m","Helvetica Neue",Helvetica,'Fira Sans',Arial,sans-serif;
     font-size: 11px;
     /*color: rgb(255,238,0);*/
     color: #212121;
