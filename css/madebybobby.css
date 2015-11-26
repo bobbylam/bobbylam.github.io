@@ -794,4 +794,14 @@ video {
     background-color: #ffeb03;
 }
 
+.ytvideo {
+    padding-top: 0;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
 /*STARTED FROM THE BOTTOM NOW WE HERE. If you started from the top like a normal person, that's okay too :)*/
