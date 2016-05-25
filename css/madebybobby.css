@@ -5,8 +5,8 @@ body {
     height: 100%;
     font-family: "3l",'Fira Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
-    color: #fff;
-    background-color: #212121;
+    color: #242424;
+    background-color: #f8f8f8;
 }
 
 html {
@@ -28,7 +28,7 @@ h6 {
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 32px;
 }
 
 h4 {
@@ -36,8 +36,9 @@ h4 {
 }
 
 h5 {
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     margin: 0 0 15px;
+    font-size: 12px;
 }
 
 p {
@@ -46,8 +47,13 @@ p {
     line-height: 1.5;
 }
 
+.col-md-8.stomp {
+    position: absolute;
+    bottom: 6%;
+}
+
 .meimage {
-        width: 50%;
+        /*width: 50%;*/
 }
 
 @media(min-width:767px) {
@@ -57,13 +63,13 @@ p {
         line-height: 1.6;
     }
     .meimage {
-        width: 25%;
+        /*width: 25%;*/
     }
 }
 
 a {
     /*color: #28c3ab;*/
-    color:rgb(255,238,0);
+    color: #242424;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -77,6 +83,10 @@ a:focus {
 }
 
 /*INTROLINK styles*/
+
+.landing a {
+    color:rgb(255,238,0);
+}
 
 .introlink a {
     color: #212121;
@@ -100,11 +110,13 @@ a:focus {
     /*border-bottom: 1px solid rgba(255,255,255,.3);*/
     text-transform: uppercase;
     font-family: "3l",'Fira Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #212121;
+    /*background-color: #f8f8f8;*/
+    background-color: transparent;
     letter-spacing: 5px;
 }
 
 .navbar-brand {
+    font-size: 16px;
     font-weight: 800;
     letter-spacing: 5px;
     margin: 0 0px;
@@ -119,6 +131,10 @@ a:focus {
 
 .navbar-custom a {
     color: #fff;
+}
+
+.top-nav-collapse.navbar-custom a {
+    color: #242424;
 }
 
 .navbar-custom .nav li a {
@@ -160,7 +176,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #212121;
+        /*background-color: #f8f8f8;*/
     }
 
     .navbar-custom.top-nav-collapse {
@@ -180,7 +196,7 @@ a:focus {
     /*text-align: center;*/
     color: #fff;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    /*background-color: #212121;*/
+    /*background-color: #f8f8f8;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -209,22 +225,33 @@ a:focus {
     width: 100%;
     height: 100%;
     padding: 100px 0;
-    background-color: #212121;
+    background-color: #f8f8f8;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
+.window {
+    background-color: rgba(248,248,248,0.95);
+    display: table;
+    width: 100%;
+    padding: 100px 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
 .about-text {
     margin-bottom: 0px;
 }
 .about-text span{
-    border-top: 2px solid rgb(255,238,0);
+/*    border-top: 2px solid rgb(255,238,0);
     border-bottom: 1px solid rgb(255,238,0);
     color: #212121;
-    background-color: rgb(255,238,0);
-    line-height: 1.8;
+    background-color: rgb(255,238,0);*/
+    line-height: 1.7;
+    font-size: 12px;
 }
 
 .numbering{
@@ -299,11 +326,6 @@ a:focus{
     }
 }
 
-.col-md-8 {
-    position: absolute;
-    bottom:6%;
-}
-
 .fa-angle-down {
     font-size: 36px;
 }
@@ -314,7 +336,7 @@ a:focus{
     margin-top: 15px;
     /*border: 2px solid #fff;*/
     opacity: 0.3;
-    background-color: #212121;
+    background-color: #f8f8f8;
     border-radius: 25px;
     font-size: 20px;
     color: #fff;
@@ -425,8 +447,7 @@ a:focus{
 }
 
 span.introlink {
-    background-color: rgb(255,238,0);
-    color: #212121;
+    /*color: #212121;*/
 }
 
 .project-section {
@@ -685,12 +706,19 @@ video {
         background: #212121;
         position: fixed;
         top:0%;
-        left:0%;
-        width:100%;
+        left: -122%;
+        height: 100%;
+        /*left:0%;*/
+        /*width:100%;*/
         overflow: hidden;
         min-height: inherit;
-        padding-top: 50px;
-        opacity: 0;
+        /*padding-top: 50px;*/
+        /*opacity: 0;*/
+    }
+    
+    .meimage {
+        visibility: hidden;
+        height: 0px;
     }
 }
 
@@ -753,18 +781,18 @@ video {
         font-size: 20px;
         color: #212121;
         opacity: 1;
-        background-color: #212121;
+        background-color: #f8f8f8;
         width: 12%;
     }
     .carousel-control.left {
     background: none;
-    background-color: #212121;
+    background-color: #f8f8f8;
     color: rgba(256,256,256,0.95);
     left: 36%;
     }
     .carousel-control.right {
     background: none;
-    background-color: #212121;
+    background-color: #f8f8f8;
     color: rgba(256,256,256,0.95);
     right: 36%;
     }
@@ -772,7 +800,7 @@ video {
     .carousel-control:hover,
     .carousel-control:focus{
         background: none;
-        background-color: #212121;
+        background-color: #f8f8f8;
         color: rgba(256,256,256,0.95);
         opacity: 1;
     }
