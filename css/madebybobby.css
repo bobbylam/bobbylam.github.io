@@ -182,6 +182,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         border-bottom: 0px solid rgba(255,255,255,.3);
     }
+
 }
 
 #wrap {
@@ -786,39 +787,20 @@ video {
 }
 
 @media(max-width:767px) {
-    .carousel-indicators {
-        visibility: hidden;
-    }
-    .carousel-control,
-    .carousel-control:active{
-        visibility: visible;
-        top:auto;
-        bottom: 3%;
-        font-size: 20px;
-        color: #212121;
-        opacity: 1;
-        background-color: #f8f8f8;
-        width: 12%;
-    }
-    .carousel-control.left {
-    background: none;
-    background-color: #f8f8f8;
-    color: rgba(256,256,256,0.95);
-    left: 36%;
-    }
-    .carousel-control.right {
-    background: none;
-    background-color: #f8f8f8;
-    color: rgba(256,256,256,0.95);
-    right: 36%;
+    #about {
+        padding-top: 60%;
     }
 
-    .carousel-control:hover,
-    .carousel-control:focus{
-        background: none;
-        background-color: #f8f8f8;
-        color: rgba(256,256,256,0.95);
-        opacity: 1;
+    .intro {
+        height: 0;
+        visibility: hidden;
+        padding: 0;
+    }
+
+    .navbar {background-color: #f8f8f8;}
+
+    .navbar-custom a, .navbar-toggle {
+        color: #242424;
     }
 }
 
