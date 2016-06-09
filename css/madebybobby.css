@@ -23,13 +23,13 @@ h4,
 h5 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "3m","Helvetica Neue",Helvetica,'Fira Sans',Arial,sans-serif;
+    font-family: "3m",'Fira Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 0;
     letter-spacing: 6px;
 }
 
 .navbar {font-size: 0.8em;}
-.bold {font-family: '3m';}
+.bold {font-family: "3m";}
 
 h1 {
     /*font-size: 32px;*/
@@ -58,7 +58,7 @@ h6 {
     font-size: 10px;
     margin: 0 0 10px;
     letter-spacing: 2px;
-    font-family: "3l","Helvetica Neue",Helvetica,'Fira Sans',Arial,sans-serif;
+    font-family: "3l",'Fira Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: normal;
 }
 
@@ -83,18 +83,26 @@ p {
     bottom: 6%;
 }
 
-.meimage {
-        /*width: 50%;*/
-}
+@font-face{
+    font-family:'3m';
+    src:url('../js/rsc/4m.ttf') format("truetype");
+    font-weight:normal;
+    font-style:normal
+    }
+
+@font-face{
+    font-family:'3l';
+    src:url('../js/rsc/4r.ttf') format("truetype");
+    /*font-weight:lighter;*/
+    font-weight:normal;
+    font-style:normal
+    }
 
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
         /*font-size: 14px;*/
         line-height: 1.6;
-    }
-    .meimage {
-        /*width: 25%;*/
     }
 }
 
@@ -248,7 +256,7 @@ a:focus {
     /*font-size: 10px;*/
     letter-spacing: 1px;
     font-weight: 100;
-    font-family: "3l","1614l","Helvetica Neue",'Fira Sans',Helvetica,Arial,sans-serif;
+    font-family: "3l",'Fira Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
     margin: 0 0 75px;
 }
 
@@ -284,31 +292,6 @@ a:focus {
     background-color: rgb(255,238,0);*/
     line-height: 1.7;
     font-size: 12px;
-}
-
-.numbering{
-    font-size: 10px;
-    font-family: "13r","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #242424;
-    text-align: left;
-    margin-bottom: 0px;
-}
-
-.quote-text{
-    font-size:40px;
-    font-family: "13r", "127", "Helvetica Neue",'Fira Sans',Helvetica,Arial,sans-serif;
-    color: #242424;
-    letter-spacing: -1px;
-    line-height: 80%;
-    text-align: center;
-}
-
-.gotham-text{
-    font-size:10px;
-    text-transform: uppercase;
-    font-family: "7l","Helvetica Neue",Helvetica,Arial,sans-serif;
-    letter-spacing: 6px;
-    color: #242424;
 }
 
 .attribution{
@@ -568,21 +551,16 @@ span.introlink {
     .project-section {
         padding: 200px 0;
     }
-
-    #map {
-        height: 400px;
-        /*margin-top: 250px;*/
-    }
 }
 
-.btn {
+/*.btn {
     text-transform: uppercase;
     font-family: '1614l', 'Fira Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-}
+}*/
 
 .btn-default {
     border: 2px solid #FFF;
@@ -602,7 +580,7 @@ span.introlink {
 .btn-rect {
     border: 2px solid rgb(255,238,0);
     border-radius: 2px;
-    font-family: "3m","Helvetica Neue",Helvetica,'Fira Sans',Arial,sans-serif;
+    font-family: "3m",'Fira Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 11px;
     /*color: rgb(255,238,0);*/
     color: #242424;
@@ -632,55 +610,6 @@ span.introlink {
         margin-top: 15px;
     }
 }
-
-@font-face{
-    font-family:'13r';
-    src:url('../fonts/13r.ttf') format("truetype");
-    font-weight:normal;
-    font-style:normal
-    }
-
-@font-face{
-    font-family:'3m';
-    src:url('../fonts/4m.ttf') format("truetype");
-    font-weight:normal;
-    font-style:normal
-    }
-
-@font-face{
-    font-family:'3l';
-    src:url('../fonts/4r.ttf') format("truetype");
-    font-weight:lighter;
-    font-style:normal
-    }
-
-@font-face{
-    font-family:'7l';
-    src:url('../fonts/7l.ttf') format("truetype");
-    font-weight:normal;
-    font-style:normal
-    }
-
-@font-face{
-    font-family:'1614l';
-    src:url('../fonts/1614l.ttf') format("truetype");
-    font-weight:normal;
-    font-style:normal
-    }
-
-@font-face{
-    font-family:'814';
-    src:url('../fonts/814.ttc') format("truetype");
-    font-weight:normal;
-    font-style:normal
-    }
-
-@font-face{
-    font-family:'127';
-    src:url('../fonts/127.otf') format("opentype");
-    font-weight:normal;
-    font-style:normal
-    }
 
 ::-moz-selection {
     text-shadow: none;
@@ -721,6 +650,7 @@ video {
 }
 
 #video-container{
+    background-color: #0B0B0B;
     position: fixed;
     bottom: 0px;
     right: 0px;
@@ -745,11 +675,6 @@ video {
         min-height: inherit;
         /*padding-top: 50px;*/
         opacity: 0;
-    }
-
-    .meimage {
-        visibility: hidden;
-        height: 0px;
     }
 
     body {
@@ -797,23 +722,6 @@ video {
 
 .fa {
     vertical-align: middle;
-}
-
-.carousel-control {
-        visibility: hidden;
-        text-shadow: none;
-    }
-
-.carousel-control.right {
-    background: none;
-}
-
-.carousel-control.left {
-    background: none;
-}
-
-.carousel-inner {
-    height:100%;
 }
 
 @media(max-width:767px) {
