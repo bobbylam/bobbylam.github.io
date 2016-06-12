@@ -13,7 +13,7 @@ h4{font-size:1.5em;}
 h5{letter-spacing:4px;margin:0 0 15px;font-size:1em;}
 h6{text-transform:uppercase;font-size:10px;margin:0 0 10px;letter-spacing:2px;font-family:"3l",'Fira Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:normal;}
 h6 a{letter-spacing:1px;}
-p{margin:0 0 25px;font-size:1em;line-height:1.5;}
+p{margin:0 0 25px;font-size:1em;line-height:1.6;}
 .smtxt{font-size:11px;}
 .col-md-8.stomp{position:absolute;bottom:6%;}
 @font-face{font-family:'3m';src:url('../js/rsc/4m.ttf') format("truetype");font-weight:normal;font-style:normal}

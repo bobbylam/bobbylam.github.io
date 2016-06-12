@@ -183,7 +183,6 @@ a:focus {
 }
 
 .navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
     /*NAVBAR HOVER COLOR*/
